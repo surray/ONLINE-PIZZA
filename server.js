@@ -11,8 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 const pizzaRoute=require('./newuser/Route/pizzas');
-
-
 app.use('/api/pizzas',pizzaRoute)
 
 
