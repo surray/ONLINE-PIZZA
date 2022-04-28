@@ -3,9 +3,10 @@ const mongoose =require ('mongoose');
 
 mongoose.connect(process.env.MONGO_URL,{useUnifiedTopology:true,usenewUrlParser:true})
 
+console.log(process.env.MONGO_URL);
 var dbs = mongoose.connection
 
-console.log(process.env.MONGO_URL);
+
 
 dbs.on('connected',()=>{
 console.log('DB connected');
