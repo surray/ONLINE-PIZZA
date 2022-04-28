@@ -12,7 +12,7 @@ app.use(express.json());
 const pizzaRoute=require('./newuser/Route/pizzas');
 
 
-app.use('/api/pizzas/',pizzaRoute)
+app.use('/api/pizzas',pizzaRoute)
 
 
 
