@@ -4,7 +4,7 @@ const app = express();
 const path =require('path');
 const dotnev =require('dotenv');
 
-dotnev.config();
+dotenv.config();
 
 
 const dbs =require('./dbs');
