@@ -5,6 +5,8 @@ mongoose.connect(process.env.MONGO_URL,{useUnifiedTopology:true,usenewUrlParser:
 
 var dbs = mongoose.connection
 
+console.log(process.env.MONGO_URL);
+
 dbs.on('connected',()=>{
 console.log('DB connected');
 })
