@@ -4,9 +4,10 @@ const app = express();
 const path =require('path');
 const dotenv = require('dotenv')
 dotenv.config();
-
+const cors =require("cors");
 
 const dbs =require('./dbs');
+app.use(cors());
 app.use(express.json());
 
 const pizzaRoute=require('./newuser/Route/pizzas');
@@ -27,14 +28,4 @@ app.listen(process.env.PORT || 5000, () => {
     console.log('Example app listening port ');
 });
 
-// app.get("/getpizzas",(req,res)=>{
-
-// Pizza.find({},(err,docs)=>{
-//     if(err){
-//         console.log(err);
-//     }
-//     else{
-//     res.send(docs)}
-// })
-// });
 
