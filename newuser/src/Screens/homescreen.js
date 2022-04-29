@@ -15,11 +15,14 @@ export default function HomeScreen() {
         dispatch(getAllPizzas())
     },[]);
 
+    console.log(typeof(pizzas));
+
     return (
         <div>
             <div className='row'>
-                {loading ? (<h1>Loading...</h1>) : error ? (<h1>something went wrong</h1>) : 
-                ( pizzas.map(pizza => {
+                {loading ? (<h1>Loading...</h1>) : error ? (<h1>something went wrong</h1>) :(
+                   
+                     pizzas.map((pizza) => {
                         return( <div className='col-md-4' key={pizza._id}>
                             <div>
                                 <Pizza pizza={pizza} />
