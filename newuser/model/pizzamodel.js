@@ -14,6 +14,6 @@ const pizzaSchema =mongoose.Schema({
     
 })
 
-const pizzaModel =mongoose.model('mern-shop',pizzaSchema)
+const pizzaModel =mongoose.model('shopinventories',pizzaSchema)
 
 module.exports =pizzaModel
