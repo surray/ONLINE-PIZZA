@@ -21,7 +21,7 @@ console.log(cartItems);
               return(
              <div className='flex-container w-100'>
                <div className='text-left m-1 w-100' >
-                  <h1>{item.name}{item.varient}</h1>
+                  <h1>{item.name} {item.varient}</h1>
                   
                   <h1>Price: {item.quantity} * {item.prices[0][item.varient]} = {item.price}</h1>
                   
