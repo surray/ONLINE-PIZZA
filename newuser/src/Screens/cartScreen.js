@@ -21,7 +21,7 @@ console.log(cartItems);
               return(
              <div className='flex-container w-100'>
                <div className='text-left m-1 w-100' >
-                  <h1>{item.PizzaName}{item.varient}</h1>
+                  <h1>{item.name}{item.varient}</h1>
                   
                   <h1>Price: {item.quantity} * {item.prices[0][item.varient]} = {item.price}</h1>
                   
@@ -33,7 +33,7 @@ console.log(cartItems);
                 </div >
                   
                 <div className='m-1 w-100'>
-                  <img src={item.PizzaImage} style={{height:"100px",width:"100px"}}/>
+                  <img src={item.image} style={{height:"100px",width:"100px"}}/>
                 </div>
                  
                 <div className='m-1 w-100'>

@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route  path="/" exact element={<HomeScreen/>}/>
           <Route  path="/cart" exact element={<CartScreen/>}/>
+          <Route  path="/bill" exact element={<BillScreen/>}/>
         </Routes>
       </BrowserRouter>
 
