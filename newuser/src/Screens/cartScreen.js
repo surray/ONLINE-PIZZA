@@ -47,7 +47,7 @@ console.log(cartItems);
         <div className='col-md-4 text-right'>
 
           <h2>Subtotal:RS.{subtotal}/-</h2>
-          <button className='btn'>Check Out</button>
+          <button className='btn'  onClick={event =>  window.location.href='/bill'}>Check Out</button>
         </div>
       </div>
     </div>
