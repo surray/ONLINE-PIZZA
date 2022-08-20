@@ -4,6 +4,7 @@ import Navbar from './components/nav_bar';
 import HomeScreen from './Screens/homescreen';
 import {Routes,Route,Switch, BrowserRouter} from 'react-router-dom';
 import CartScreen from './Screens/cartScreen';
+import BillScreen from './Screens/billScreen';
 
 
 function App() {
